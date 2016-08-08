@@ -1,14 +1,14 @@
 install
 text
 cdrom
-lang en_US.UTF-8
+lang en_GB.UTF-8
 keyboard us
 network --onboot yes --device eth0 --bootproto dhcp --noipv6 --hostname vagrant-centos-6.vagrantup.com
 rootpw vagrant
 firewall --disabled
 authconfig --enableshadow --passalgo=sha512
 selinux --disabled
-timezone --utc America/Chicago
+timezone --utc Etc/UTC
 zerombr
 clearpart --all
 part /boot --fstype=ext4 --size=512
